@@ -1,15 +1,16 @@
-import { Component } from "react";
-import React from "react";
+import React, { useState } from "react";
+import ListGroup from "react-bootstrap/ListGroup";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function PostList({ posts }) {
+  const [postId, setPostId] = useState([]);
   return (
     <div>
-      <h1>Post List</h1>
-      <ul>
+      <ListGroup>
         {posts.map((post) => (
-          <li key={post.id}>{post.title}</li>
+          <ListGroup.Item itemID={post.postId}>{post.title}</ListGroup.Item>
         ))}
-      </ul>
+      </ListGroup>
     </div>
   );
 }

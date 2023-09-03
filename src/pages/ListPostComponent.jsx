@@ -1,22 +1,6 @@
 // Your parent component or route file
 import React, { useState, useEffect } from "react";
-import PostList from "./PostList"; // Import the PostList component
-
-function loadPosts() {
-  let posts = [
-    {
-      id: 12,
-      title: "Edit Post",
-      content: "Edit Content post",
-    },
-    {
-      id: 18,
-      title: "New Post 9",
-      content: "test new Post 9",
-    },
-  ];
-  return posts;
-}
+import PostList from "../PostList";
 
 async function getPosts() {
   let response = await fetch("https://localhost:7265/api/posts", {
