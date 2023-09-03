@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function PostList({ posts }) {
-  const [postId, setPostId] = useState([]);
   return (
     <div>
       <ListGroup>

@@ -23,7 +23,7 @@ function ListPostComponent() {
       setPosts(data);
       console.log(data);
     });
-  }, posts);
+  }, []);
   return (
     <div>
       {/* Use the PostList component and pass the posts data */}

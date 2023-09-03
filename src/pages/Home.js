@@ -22,7 +22,7 @@ const Home = () => {
       setPosts(data);
       console.log(data);
     });
-  }, posts);
+  }, []);
   return (
     <div>
       <h1>Lista de Posts</h1>
