@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import * as ReactDOM from "react-dom";
+import Comments from "./comments";
 
 async function getPostsbyid(id) {
   let response = await fetch("https://localhost:7265/api/posts/id/" + id, {
@@ -29,6 +29,10 @@ const ReadPost = () => {
     <div>
       <h1>{postContent.title}</h1>
       <p>{postContent.content}</p>
+      <div>
+        <br />
+        <Comments />
+      </div>
     </div>
   );
 };
