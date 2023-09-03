@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Comments from "./comments";
+import Comments from "./Comments";
 
 async function getPostsbyid(id) {
   let response = await fetch("https://localhost:7265/api/posts/id/" + id, {
